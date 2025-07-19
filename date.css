@@ -1,0 +1,232 @@
+/* รีเซ็ต */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sarabun", sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 393px;
+  padding: 0 24px;
+}
+
+.top-bar {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  margin-right: 8px;
+}
+
+.univ-text .en {
+  font-size: 12px;
+  color: #222;
+}
+
+.univ-text .th {
+  font-size: 14px;
+  color: #444;
+}
+
+.top-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 12px;
+}
+
+.lang {
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.login-btn {
+  background-color: #e2f5df;
+  border: 1px solid #3ea66b;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.menu-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.calendar-container {
+  padding: 20px 16px;
+}
+
+.main-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.form-box {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+}
+
+.form-box label {
+  display: block;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.form-box select,
+.form-box input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.half {
+  flex: 1;
+}
+
+.table-container {
+  background: white;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  body {
+    justify-content: center;
+    background-color: #f5f5f5;
+  }
+
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .top-bar {
+    padding: 16px 24px;
+  }
+
+  .logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  .univ-text .en {
+    font-size: 14px;
+  }
+
+  .univ-text .th {
+    font-size: 16px;
+  }
+
+  .top-right {
+    font-size: 14px;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+    margin-top: 32px;
+  }
+
+  .form-box {
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+
+  .table-container {
+    padding: 16px;
+  }
+
+  table {
+    font-size: 1rem;
+  }
+}
+
+/* 🔻 Responsive for Large Desktop */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .row {
+    gap: 20px;
+  }
+
+  .form-box label {
+    font-size: 1rem;
+  }
+
+  .form-box select,
+  .form-box input {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  th, td {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meajo.reg</title>
+  <!-- ใช้ Tailwind CSS ผ่าน CDN (สำหรับการทดลองหรือพัฒนาเบื้องต้น) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+    body {
+      font-family: 'Sarabun', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white flex justify-center min-h-screen">
+
+  <div class="w-full max-w-[1024px] mx-auto px-3">
+
+    <!-- แถบบน -->
+    <div class="bg-white w-full flex justify-between items-start p-2.5 border-b border-gray-300 shadow-md">
+      <div class="flex items-center">
+        <img src="image/MJU_LOGO.svg.png" alt="Meajo University Logo" class="w-[55px] h-[55px] mr-2">
+        <div class="univ-text">
+          <div class="text-xs text-[#222]">Meajo University.REG</div>
+          <div class="text-sm text-[#444]">มหาวิทยาลัยแม่โจ้</div>
+        </div>
+      </div>
+      <div class="flex flex-col items-end text-xs">
+        <a href="#" class="text-[#333] mb-1 no-underline">EN | TH</a>
+        <div class="flex flex-col items-end text-xs">
+          <a href="login.html" class="bg-red-100 border border-red-600 text-red-800 px-2 py-1 rounded text-xs mb-1">ออกจากระบบ</a>
+          <div class="text-lg cursor-pointer">&#9776;</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- หัวข้อ -->
+    <h2 class="text-center text-[20px] my-5">ตารางการใช้ห้อง</h2>
+
+    <!-- ฟอร์มเลือก -->
+    <section class="w-full bg-white shadow-md p-4 rounded">
+      <label class="block mt-2 font-bold">วิทยาเขต</label>
+      <select class="w-full p-2 mt-1 rounded border border-gray-300 text-sm">
+        <option selected>โปรดเลือกตัวเลือก</option>
+        <option>วิทยาเขตเชียงใหม่</option>
+      </select>
+
+      <label class="block mt-2 font-bold">อาคาร</label>
+      <select class="w-full p-2 mt-1 rounded border border-gray-300 text-sm">
+        <option selected>โปรดเลือกตัวเลือก</option>
+        <option>อาคาร60ปี</option>
+      </select>
+
+      <label class="block mt-2 font-bold">ห้อง</label>
+      <select class="w-full p-2 mt-1 rounded border border-gray-300 text-sm">
+        <option>โปรดเลือกตัวเลือก</option>
+      </select>
+    </section>
+
+    <!-- ตารางเวลา -->
+    <section class="w-full overflow-x-auto my-5">
+      <table class="min-w-[600px] bg-white border-collapse">
+        <thead>
+          <tr>
+            <th class="border border-gray-300 p-2 text-center text-sm">วัน/เวลา</th>
+            <th class="border border-gray-300 p-2 text-center text-sm">06:00</th>
+            <th class="border border-gray-300 p-2 text-center text-sm">07:00</th>
+            <th class="border border-gray-300 p-2 text-center text-sm">08:00</th>
+            <th class="border border-gray-300 p-2 text-center text-sm">09:00</th>
+            <th class="border border-gray-300 p-2 text-center text-sm">10:00</th>
+            <th class="border border-gray-300 p-2 text-center text-sm">11:00</th>
+            <th class="border border-gray-300 p-2 text-center text-sm">12:00</th>
+            <th class="border border-gray-300 p-2 text-center text-sm">13:00</th>
+            <th class="border border-gray-300 p-2 text-center text-sm">14:00</th>
+            <th class="border border-gray-300 p-2 text-center text-sm">15:00</th>
+            <th class="border border-gray-300 p-2 text-center text-sm">16:00</th>
+            <th class="border border-gray-300 p-2 text-center text-sm">17:00</th>
+            <th class="border border-gray-300 p-2 text-center text-sm">18:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="border border-gray-300 p-2 text-center text-sm">จันทร์</td><td colspan="13" class="border border-gray-300 p-2 text-center text-sm"></td></tr>
+          <tr><td class="border border-gray-300 p-2 text-center text-sm">อังคาร</td><td colspan="13" class="border border-gray-300 p-2 text-center text-sm"></td></tr>
+          <tr><td class="border border-gray-300 p-2 text-center text-sm">พุธ</td><td colspan="13" class="border border-gray-300 p-2 text-center text-sm"></td></tr>
+          <tr><td class="border border-gray-300 p-2 text-center text-sm">พฤหัส</td><td colspan="13" class="border border-gray-300 p-2 text-center text-sm"></td></tr>
+          <tr><td class="border border-gray-300 p-2 text-center text-sm">ศุกร์</td><td colspan="13" class="border border-gray-300 p-2 text-center text-sm"></td></tr>
+          <tr><td class="border border-gray-300 p-2 text-center text-sm">เสาร์</td><td colspan="13" class="border border-gray-300 p-2 text-center text-sm"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+  </div>
+</body>
+</html>

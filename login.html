@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- โหลด Tailwind ผ่าน CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Login</title>
+</head>
+<body class="bg-[#e0f0e8] font-sans m-0 p-0">
+
+  <!-- ส่วนบน โลโก้ -->
+  <header class="w-full bg-white flex flex-col items-center justify-center py-4">
+    <div class="flex flex-col items-center justify-center text-center">
+      <img src="image/mju_logo_main-resize.png" alt="MJU Logo" class="block mx-auto max-w-[500px] h-auto">
+    </div>
+    <img src="image\mgnRaJ00keSSVaqjqHCSfCrx9tALtKD5.jpg" alt="Maejo Background" class="w-a h-auto block">
+  </header>
+
+  <!-- เนื้อหา -->
+  <div class="max-w-[400px] md:max-w-[500px] mx-auto mt-0 mb-5 bg-[#f0f5f1] rounded-lg overflow-hidden shadow-md">
+
+    <!-- ปุ่มเลือกบทบาท -->
+    <div class="flex justify-center gap-4 p-4 bg-[#d6e8d9]">
+      <button class="role-btn active px-6 py-3 rounded-full text-base bg-[#e8ede9] hover:bg-[#cde2cf] transition">อาจารย์</button>
+      <button class="role-btn px-6 py-3 rounded-full text-base bg-[#e8ede9] hover:bg-[#cde2cf] transition">นักศึกษา</button>
+    </div>
+
+    <!-- ฟอร์ม Login -->
+    <form class="p-5 bg-white">
+      <!-- กล่องกรอก Username -->
+      <div class="flex items-center mb-4 bg-[#ffe680] rounded-md px-3 py-2">
+        <label for="username" class="text-xl mr-3">👤</label>
+        <input type="text" id="username" placeholder="Username" class="bg-transparent border-none outline-none text-base w-full">
+      </div>
+      <!-- กล่องกรอก Password -->
+      <div class="flex items-center mb-4 bg-[#ffe680] rounded-md px-3 py-2">
+        <label for="password" class="text-xl mr-3">🔒</label>
+        <input type="password" id="password" placeholder="Password" class="bg-transparent border-none outline-none text-base w-full">
+      </div>
+
+      <!-- ลืมรหัสผ่าน -->
+      <div class="text-right mb-4">
+        <a href="#" class="text-sm text-gray-600 no-underline">ลืมรหัสผ่าน</a>
+      </div>
+
+      <!-- ปุ่ม Sign In -->
+      <div class="w-full text-center mt-4">
+  <a href="menu2.html" class="inline-block w-full max-w-sm py-3 bg-[#3da9f5] text-white text-base font-bold rounded-full hover:bg-[#1d8ee0] transition">
+    sign in
+  </a>
+</div>
+
+      <!-- ปุ่มอื่น -->
+      <div class="mt-4">
+        <button type="button" class="w-full py-2 mt-2 bg-[#f1f1f1] text-sm rounded-md hover:bg-[#e0e0e0] transition">
+          sign in by MJU Mobile App
+        </button>
+        <button type="button" class="w-full py-2 mt-2 bg-[#f1f1f1] text-sm rounded-md hover:bg-[#e0e0e0] transition">
+          sign in by ThaiD App
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- สคริปต์สลับปุ่ม -->
+  <script>
+    const roleButtons = document.querySelectorAll('.role-btn');
+    roleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        roleButtons.forEach(btn => btn.classList.remove('bg-white','font-bold','shadow-md','active'));
+        button.classList.add('bg-white','font-bold','shadow-md','active');
+      });
+    });
+  </script>
+</body>
+</html>

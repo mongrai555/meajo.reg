@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meajo.reg</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-white md:bg-gray-100 font-sans flex justify-center">
+
+  <div class="w-full max-w-[393px] md:max-w-[768px] lg:max-w-[1024px] px-6">
+    <!-- แถบบน -->
+    <header class="w-full flex justify-between items-start p-3 md:p-6 border-b border-gray-300 shadow-md bg-white">
+      <div class="flex items-center">
+        <img src="image/MJU_LOGO.svg.png" alt="Meajo University Logo" class="w-[55px] h-[55px] md:w-[65px] md:h-[65px] mr-2">
+        <div class="leading-tight">
+          <div class="text-xs md:text-sm text-gray-800">Meajo University.REG</div>
+          <div class="text-sm md:text-base text-gray-600">มหาวิทยาลัยแม่โจ้</div>
+        </div>
+      </div>
+      <div class="flex flex-col items-end text-xs md:text-sm">
+        <a href="#" class="text-gray-700 mb-1">EN | TH</a>
+        <a href="login.html" class="bg-green-100 border border-green-500 text-green-800 px-2 py-1 rounded mb-1">เข้าสู่ระบบ</a>
+        <div class="text-lg cursor-pointer">&#9776;</div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="py-6 px-4">
+      <h2 class="text-xl md:text-2xl font-bold text-center mb-4">ปฏิทินการศึกษา</h2>
+
+      <div class="bg-white rounded-lg shadow-md p-4 md:p-6 mb-6">
+        <label for="calendarSet" class="block font-bold mb-1">ชุดปฏิทิน</label>
+        <select id="calendarSet" class="w-full border border-gray-300 rounded px-3 py-2">
+          <option selected>โปรดเลือกตัวเลือก</option>
+          <option>1000:วิทยาลับยริหารศาสตร์</option>
+          <option>1001:ปริญญาตรี ปกติ</option>
+          <option>1002:ปริญญาตรี สมทบ</option>
+          <option>1003:ปริญญาตรี ภาคปกติ วิทยาเขตฯ</option>
+          <option>1006:นักศึกษาทดลองเรียนบัณฑิตศึกษา</option>
+          <option>2001:บัณฑิตศึกษา ปกติ</option>
+          <option>2002:บัณฑิตศึกษา สมทบ</option>
+          <option>3001:ปริญญาเอก ปกติ</option>
+          <option>7001:แม่โจ้-ชุมพร</option>
+          <option>8001:แม่โจ้-แพร่</option>
+          <option>9999: TEST</option>
+        </select>
+
+        <div class="flex flex-col md:flex-row gap-2 md:gap-4 mt-4">
+          <div class="flex-1">
+            <label for="year" class="block font-bold mb-1">ปีการศึกษา</label>
+            <input type="text" id="term" placeholder="โปรดเลือก" class="w-full border border-gray-300 rounded px-3 py-2">
+
+          <div class="flex-1">
+            <label for="term" class="block font-bold mb-1">เทอม</label>
+            <select id="calendarSet" class="w-full border border-gray-300 rounded px-3 py-2">
+          <option selected>โปรดเลือกตัวเลือก</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md p-2 md:p-4">
+        <table class="w-full border-collapse text-sm md:text-base">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="border border-gray-300 text-left px-3 py-2 font-bold">รายการ</th>
+              <th class="border border-gray-300 text-left px-3 py-2 font-bold">วันเริ่มต้น</th>
+              <th class="border border-gray-300 text-left px-3 py-2 font-bold">วันสุดท้าย</th>
+            </tr>
+          </thead>
+          <tbody id="calendar-body">
+            <!-- Data rows will be inserted by script -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+</body>
+</html>

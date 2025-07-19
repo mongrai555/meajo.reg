@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>มหาวิทยาลัยแม่โจ้</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Inter&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Kanit', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-black">
+    <div class="max-w-6xl mx-auto bg-white px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <header class="bg-white p-4 shadow">
+        <div class="flex items-center justify-between flex-wrap">
+          <div class="h-14">
+            <img src="image/mju_logo_main-resize.png" alt="โลโก้มหาวิทยาลัยแม่โจ้" class="h-full" />
+          </div>
+          <nav class="flex gap-4 flex-col sm:flex-row mt-2 sm:mt-0">
+            <a href="#" class="text-gray-800 font-bold hover:text-green-700 text-sm">หน้าหลัก</a>
+            <a href="#" class="text-gray-800 font-bold hover:text-green-700 text-sm">ลงทะเบียน</a>
+            <a href="#" class="text-gray-800 font-bold hover:text-green-700 text-sm">เข้าศึกษาต่อ</a>
+            <a href="#" class="text-gray-800 font-bold hover:text-green-700 text-sm">ติดต่อเรา</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Welcome Section -->
+      <section class="flex flex-col sm:flex-row w-full">
+        <div class="bg-[#375534] text-white w-full sm:w-1/2 p-5 flex flex-col justify-center">
+          <h1 class="text-lg leading-relaxed mb-4">
+            ยินดีต้อนรับ<br />
+            มหาวิทยาลัยแม่โจ้<br />
+            <span class="text-base">Maejo University</span>
+          </h1>
+          <button class="bg-[#F6F4E8] text-black px-4 py-2 rounded-full font-bold w-fit">
+            รหัสนักศึกษาของคุณ
+          </button>
+        </div>
+        <div class="w-full sm:w-1/2">
+          <img src="image/mgnRaJ00keSSVaqjqHCSfCrx9tALtKD5.jpg" alt="ภาพมหาวิทยาลัย" class="w-full h-full object-cover" />
+        </div>
+      </section>
+
+      <!-- ประกาศเรื่อง -->
+      <section class="p-4">
+        <div class="bg-[#E9DC8C] p-3 rounded mb-4">
+          <h2 class="font-bold text-sm">ประกาศเรื่อง</h2>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-5">
+          <!-- Announce -->
+          <div class="w-full sm:w-2/3">
+            <div class="mb-5">
+              <h3 class="font-semibold">1. การชำระเงิน/การชำระเงินเข้า</h3>
+              <img src="image/payGuide.png" alt="การชำระเงิน" class="rounded-2xl mt-2 w-full h-auto" />
+            </div>
+            <div class="mb-5">
+              <h3 class="font-semibold">2. 10100214 ผน101 เกษตรเพื่อชีวิต (ด่วนที่สุด)</h3>
+              <img src="image/513d10a6f2085f1b.jpg" alt="QR ผน101" class="rounded-2xl mt-2 w-full h-auto" />
+            </div>
+            <div class="mb-5">
+              <h3 class="font-semibold">3. รักษาสภาพ/ลาพัก (ด่วนที่สุด)</h3>
+              <img src="image/098658b9339d1db7.jpg" alt="ลาพักการศึกษา" class="rounded-2xl mt-2 w-full h-auto" />
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="w-full sm:w-1/3 bg-[#F6F4E8] p-4 rounded-lg font-[Inter]">
+  <div class="flex flex-col space-y-3">
+    <a href="subject2.html" class="bg-white text-xs font-bold py-2 px-4 rounded-lg shadow hover:bg-gray-100 text-left">
+      วิชาที่เปิดสอน
+    </a>
+    <a href="timetable.html" class="bg-white text-xs font-bold py-2 px-4 rounded-lg shadow hover:bg-gray-100 text-left">
+      ตารางเรียน/ตารางสอบ<br />- นักศึกษา<br />- อาจารย์
+    </a>
+    <button class="bg-white text-xs font-bold py-2 px-4 rounded-lg shadow hover:bg-gray-100 text-left">
+      ผลการเรียน
+    </button>
+    <a href="date2.html" class="bg-white text-xs font-bold py-2 px-4 rounded-lg shadow hover:bg-gray-100 text-left">
+      ปฏิทินการศึกษา
+    </a>
+    <a href="room2.html" class="bg-white text-xs font-bold py-2 px-4 rounded-lg shadow hover:bg-gray-100 text-left">
+      ตารางการใช้ห้อง
+    </a>
+    <button class="bg-white text-xs font-bold py-2 px-4 rounded-lg shadow hover:bg-gray-100 text-left">
+      หลักสูตร
+    </button>
+    <button class="bg-white text-xs font-bold py-2 px-4 rounded-lg shadow hover:bg-gray-100 text-left">
+      ตอบคำถาม
+    </button>
+    <button class="bg-white text-xs font-bold py-2 px-4 rounded-lg shadow hover:bg-gray-100 text-left">
+      แนะนำลงทะเบียน
+    </button>
+  </div>
+</aside>
+      </section>
+
+      <!-- Footer Contact Box -->
+      <footer class="fixed bottom-0 right-0 bg-gray-200 p-4 w-72 shadow-lg z-50 text-left leading-relaxed sm:relative sm:w-full sm:shadow-none sm:mt-6">
+        <h3 class="font-bold mb-2">ติดต่อมหาวิทยาลัยแม่โจ้</h3>
+        <p class="text-sm">
+          เลขที่ 63 หมู่ 4 ต.หนองหาร<br />
+          อ.สันทราย จ.เชียงใหม่ 50290<br />
+          โทรศัพท์ : 053 873000<br />
+          โทรสาร : 053 873015<br />
+          maejo@mju.ac.th
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

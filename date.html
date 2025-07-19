@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meajo.reg</title>
+  <link rel="stylesheet" href="date.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- แถบบน -->
+    <header class="top-bar">
+      <div class="logo-container">
+        <img src="image/MJU_LOGO.svg.png" alt="Meajo University Logo" class="logo">
+        <div class="univ-text">
+          <div class="en">Meajo University.REG</div>
+          <div class="th">มหาวิทยาลัยแม่โจ้</div>
+        </div>
+      </div>
+      <div class="top-right">
+        <a href="#" class="lang">EN | TH</a>
+        <button class="login-btn">เข้าสู่ระบบ</button>
+        <div class="menu-icon">&#9776;</div>
+      </div>
+    </header>
+    <div>
+        <main class="calendar-container">
+    <h2 class="main-title">ปฏิทินการศึกษา</h2>
+
+    <div class="form-box">
+      <label for="calendarSet">ชุดปฏิทิน</label>
+      <select id="calendarSet">
+        <option>โปรดเลือกตัวเลือก</option>
+      </select>
+
+      <div class="row">
+        <div class="half">
+          <label for="year">ปีการศึกษา</label>
+          <input type="text" id="year" placeholder="โปรดเลือก">
+        </div>
+        <div class="half">
+          <label for="term">เทอม</label>
+          <input type="text" id="term" placeholder="โปรดเลือก">
+        </div>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>รายการ</th>
+            <th>วันเริ่มต้น</th>
+            <th>วันสุดท้าย</th>
+          </tr>
+        </thead>
+        <tbody id="calendar-body">
+          <!-- Data rows will be inserted by script -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+    </div>

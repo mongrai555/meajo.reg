@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>รายวิชา</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-sans overflow-x-hidden">
+
+    <!-- Header -->
+    <div class="w-full px-3">
+      <header class="bg-white w-full flex justify-between items-start p-2.5 border-b border-gray-300 shadow-md">
+        <div class="flex items-center">
+          <img src="image/MJU_LOGO.svg.png" alt="Meajo University Logo" class="w-[55px] h-[55px] mr-2" />
+          <div class="leading-tight">
+            <div class="text-xs text-gray-800">Meajo University.REG</div>
+            <div class="text-sm text-gray-700">มหาวิทยาลัยแม่โจ้</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-end text-xs">
+          <a href="#" class="text-gray-700 mb-1">EN | TH</a>
+          <a href="login.html" class="bg-red-100 border border-red-600 text-red-800 px-2 py-1 rounded text-xs mb-1">ออกจากระบบ</a>
+          <div class="text-lg cursor-pointer">&#9776;</div>
+        </div>
+      </header>
+    </div>
+
+    <!-- Main -->
+    <main class="px-4 py-3">
+      <!-- หัวเรื่อง -->
+      <div class="flex justify-between items-center w-full border-b-2 border-[#375534] pb-2 mb-4 px-1">
+        <h2 class="text-base text-black m-0">รายวิชาที่สอน</h2>
+        <h2 class="text-base font-normal m-0">ภาคการศึกษา 1/2568</h2>
+      </div>
+
+      <!-- ตารางรายวิชา -->
+      <section class="overflow-x-auto w-full">
+        <table class="w-full min-w-[800px] border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-white">
+              <th class="border border-gray-300 px-2 py-2 text-center text-sm text-black">รหัสวิชา</th>
+              <th class="border border-gray-300 px-2 py-2 text-center text-sm text-black">วิชา</th>
+              <th class="border border-gray-300 px-2 py-2 text-center text-sm text-black">กลุ่มและห้อง</th>
+              <th class="border border-gray-300 px-2 py-2 text-center text-sm text-black">วันและเวลา</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">10301231</td>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">เว็บเทคโนโลยี</td>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">1,Lab คอม 3-4</td>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">MON 09.00-12.00</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">10301223</td>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">เว็บเทคโนโลยี</td>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">1,Lab คอม 3-4</td>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">TUE 08.00-10.00</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">10301231</td>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">ฐานข้อมูลโครงสร้างเชิงสัมพันธ์</td>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">1,Lab คอม 3-4</td>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">THU 13.00-15.00</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">10301223</td>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">ฐานข้อมูลโครงสร้างเชิงสัมพันธ์</td>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">1,Lab คอม 3-4</td>
+              <td class="border border-gray-300 px-2 py-2 text-center text-base">FRI 13.00-16.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
